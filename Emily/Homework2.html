@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>作业二</title>
+<script type="text/javascript" src="nochange.js"></script>
+
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+</head>
+
+<body background="img/img14.jpg"  width="100%" position:relative>
+<script src="jquery-1.11.0.js"></script>
+<div position：absolute;left:650px;top:300px;z-index:10
+  >
+
+<form action="#" method="post">
+  <h3><font color="#3333FF"> 馋猫零食订单</font></h3><table border="1">
+  <tr>
+    <th><font color="#3333FF"> 品名</font></th>
+    <th><font color="#3333FF"> 价格</font></th>
+    <th><font color="#3333FF"> 订量</font></th>
+    </tr>
+  <tr>
+    <th><font color="#3333FF"> 馋猫大礼包</font></th>
+    <th><font color="#3333FF"> ￥69.00</font></th>
+    <td><input type="text" id="rz" size="6" /></input></td>
+  </tr>
+  <script type="text/javascript">
+  </script>
+  <tr>
+    <th><font color="#3333FF"> 馋猫薯片</font></th>
+    <th><font color="#3333FF"> ￥12.00</font></th>
+    <td><input type="text" id="hz" size="6" /></input></td>
+  </tr>
+  <tr>
+    <th><font color="#3333FF"> 馋猫雪饼</font></th>
+    <th><font color="#3333FF"> ￥17.00</font></th>
+    <td><input type="text" id="xy" size="6" /></input></td>
+  </tr>
+  <tr>
+    <th><font color="#3333FF"> 弹力糖</font></th>
+    <th><font color="#3333FF"> ￥5.00</font></th>
+    <td><input type="text" id="yw" size="6" /></input></td>
+  </tr>
+   </table>
+ <p> <!-- 用标签属性绑定事件处理器-->
+   <input type="button" value="总价" onclick="computeCost();" />
+   <input type="text" size="8" id="cost" onfocus="this.blur();"/></p>
+   <p><input type="submit" id="tj" value="提交订单"/>
+    <input type="reset" value="重置"/></p>
+ </form>
+  </script>
+  </div>
+  <script>
+　function computeCost(){
+    var rz=document.getElementById("rz").value;
+    var hz=document.getElementById("hz").value;
+    var xy=document.getElementById("xy").value;
+	var yw=document.getElementById("yw").value;
+
+    document.getElementById("cost").value=
+    totalCost=rz*69+hz*12+xy*17+yw*5;
+
+}
+</script>
+</body>
+</html>
